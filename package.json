@@ -5,8 +5,8 @@
   "description": "Hafsaa Ouifak — explainable AI, research, and the human side of the work.",
   "scripts": {
     "start": "node scripts/serve.mjs",
-    "check": "node --check app.js && node --check content.js && node scripts/check.mjs",
-    "build": "node scripts/build.mjs"
+    "check": "node --check app.js && node --check content.js && node --check render.js && node scripts/check.mjs",
+    "build": "node scripts/build.mjs && node scripts/check-built.mjs"
   },
   "engines": { "node": ">=18" }
 }

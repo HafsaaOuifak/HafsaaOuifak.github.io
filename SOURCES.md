@@ -43,3 +43,14 @@ ResearchGate and Scopus URLs come from the user's supplied CV source:
 - https://www.scopus.com/authid/detail.uri?authorId=57261386500
 
 Publication reading guides summarize the research subjects in the supplied titles; they are not copied abstracts or claims about experimental findings. Publication counts reflect only the 14 records in this portfolio (6 journal articles, 6 conference contributions, 2 under-review manuscripts); conference entries retain their publication-pending statuses where applicable.
+
+## Physical AI and search metadata
+
+Physical AI is identified as a recent research direction based on the user's update. The sense–reason–act diagram is a conceptual illustration, not an experimental result. The description of Physical AI's connection to embodied reasoning and physical interaction is consistent with Google DeepMind's robotics overview: https://deepmind.google/en/models/gemini-robotics/gemini-robotics/.
+
+Search implementation follows Google Search Central guidance on JavaScript SEO, profile structured data, and sitemaps:
+- https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+- https://developers.google.com/search/docs/appearance/structured-data/profile-page
+- https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+The initial HTML and interactive page share the same renderers and visible research content. Structured data identifies the profile and describes the visible publication archive. No rankings, indexing, citations, or research results are fabricated.
