@@ -28,3 +28,18 @@ Space Grotesk and DM Sans from Google Fonts. Their SIL Open Font License texts a
 ## Deployment reference
 
 GitHub Pages workflow follows GitHub's official documentation, checked October 27, 2026: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages.
+
+## Additional activity photographs in the navy redesign
+
+- `assets/award-2.jpg`: Hafsaa's graduation portrait, from the same ENSIAS award post linked above.
+- `assets/culture-2.jpg`, `assets/culture-3.jpg`, and `assets/culture-4.jpg`: activity photographs from Hafsaa's post about the 24th Come to My Home event at UM6P: https://www.linkedin.com/posts/hafsaa-ouifak_cometomyhome-um6p-art-activity-6981269418089586688-SkWP. The post describes participation in discussions about art, astronomy, culture, and education.
+- `assets/cleantech-3.jpg` and `assets/cleantech-4.jpg`: event photographs shared by Ron Bloemers / ClimateLaunchpad Morocco: https://www.linkedin.com/posts/ronbloemers_cleantech-sustainability-cleantech-activity-7210739390480822273-nUpM. The post and its author comment identify Hafsaa among the participating experts. Event: June 20, 2024, at STARTGATE UM6P. Captions describe the event; no other participant is presented as Hafsaa.
+- `assets/outreach.jpg`: video preview from Kristen Hallas's public account of the Florence Nightingale Day activity at UTRGV: https://www.linkedin.com/posts/kristenhallas_presidentialaichallenge-ai-womeninstem-activity-7450946838397890560-NqOu. The post credits a brainstorming session with Hafsaa for the interactive race dashboard.
+
+All activity cards and photo viewers link directly to the corresponding LinkedIn post and identify the photo source. The gallery is curated rather than a live LinkedIn feed.
+
+ResearchGate and Scopus URLs come from the user's supplied CV source:
+- https://www.researchgate.net/profile/Hafsaa-Ouifak-2
+- https://www.scopus.com/authid/detail.uri?authorId=57261386500
+
+Publication reading guides summarize the research subjects in the supplied titles; they are not copied abstracts or claims about experimental findings. Publication counts reflect only the 14 records in this portfolio (6 journal articles, 6 conference contributions, 2 under-review manuscripts); conference entries retain their publication-pending statuses where applicable.

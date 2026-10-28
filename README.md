@@ -1,6 +1,6 @@
 # Hafsaa Ouifak — AI, with understanding.
 
-A dark, interactive research portfolio built for GitHub Pages. Plain HTML, CSS, and JavaScript, with no runtime dependencies, API keys, analytics, or external asset requests.
+A navy-blue, interactive research portfolio built for GitHub Pages. Plain HTML, CSS, and JavaScript, with no runtime dependencies, API keys, analytics, or external asset requests.
 
 ## Preview
 
@@ -23,14 +23,14 @@ The publishable site is in `dist/`. Relative asset paths support either a user s
 
 ## GitHub Pages
 
-The intended repository is `HafsaaOuifak/HafsaaOuifak.github.io`. Before creating it, check whether it already exists and preserve any existing work. Once the files are committed to `main`, choose **Settings → Pages → Build and deployment → Source → GitHub Actions**. The included workflow validates, packages, and deploys the site. The user-site URL will be `https://hafsaaouifak.github.io/` after a successful deployment; this is an intended URL, not evidence that publication has happened.
+The repository is `HafsaaOuifak/HafsaaOuifak.github.io`, and GitHub Pages uses GitHub Actions. Push updates to `main`; the included workflow validates, packages, and deploys the site at https://hafsaaouifak.github.io/. Preserve the repository and existing work when editing.
 
 ## Edit content
 
-- `content.js`: projects, publication records and statuses, career and education timelines.
+- `content.js`: projects, publication records and reading guides, activity galleries with source links, and career and education timelines.
 - `index.html`: introduction, LinkedIn cards, community section, and contact links.
 - `styles.css`: colors, typography, layout, responsive rules, and reduced-motion support.
-- `app.js`: project dialog, filters, search, clipboard, animation, and the fuzzy-logic experiment.
+- `app.js`: project notes, a publication library with topic/status filters, search, sorting, featured-paper carousel, reference copying, activity filters and keyboard photo viewer, navigation, animation, and the fuzzy-logic experiment.
 
 The fuzzy demo is educational: overlapping membership functions are not probabilities. The neural sculpture is decorative and can be paused; it also respects reduced-motion preferences and stops when offscreen. Project dialogs support Escape, keyboard focus, and focus restoration. All photos and fonts are served locally.
 

@@ -50,6 +50,33 @@ const portfolio = {
   }
 };
 
+
+// Concise reading guides describe each paper's subject, not unreported findings.
+const publicationNotes = [
+  ['energy', 'Digital twins connect models, monitoring, and the behavior of battery energy storage systems.'],
+  ['explainable', 'Similarity-based aggregation and calibration in neuro-fuzzy systems, with interpretability at the center.'],
+  ['explainable', 'A cross-domain review of the role of fuzzy logic in machine-learning interpretability and explainability.'],
+  ['explainable', 'Hyperparameter tuning and homogeneous ensembles of neuro-fuzzy classifiers for medical data.'],
+  ['explainable', 'A systematic review of two decades of neuro-fuzzy ensemble applications across research domains.'],
+  ['explainable', 'Examines predictive performance and interpretability in Mamdani and Takagi–Sugeno–Kang models for medical diagnosis.'],
+  ['explainable', 'A rule-merging approach to interpretable bagging of adaptive neuro-fuzzy inference systems. This manuscript is under review.'],
+  ['autonomy', 'A collaborative manuscript on path-planning algorithms for autonomous mobile robots. This manuscript is under review.'],
+  ['energy,autonomy', 'Presented work connecting battery intelligence with mission decision support for autonomous maritime systems. Publication pending.'],
+  ['energy,explainable', 'Presented work on the performance–interpretability trade-off in physics-informed battery state-of-health models. Publication pending.'],
+  ['explainable', 'Investigates the potential of fuzzy systems for making medical artificial intelligence easier to interpret.'],
+  ['explainable', 'A systematic mapping study of neuro-fuzzy ensembles and their research landscape.'],
+  ['explainable', 'Studies the balance between predictive performance and interpretability in Mamdani neuro-fuzzy medical classifiers.'],
+  ['explainable', 'Hierarchical decomposition using fuzzy simplicial complexes, at the intersection of fuzzy modeling and structure.']
+];
+portfolio.publications.forEach((paper,index)=>{paper.id='paper-'+index;paper.topics=publicationNotes[index][0].split(',');paper.focus=publicationNotes[index][1];});
+portfolio.moments = [
+  {id:'cleantech',category:'community',tag:'COMMUNITY · STARTGATE, UM6P',title:'More women. More climate solutions.',description:'Connecting with the Women in Cleantech community at ClimateLaunchpad Morocco.',credit:'Event photos shared by Ron Bloemers / ClimateLaunchpad Morocco.',url:'https://www.linkedin.com/posts/ronbloemers_cleantech-sustainability-cleantech-activity-7210739390480822273-nUpM',photos:[['cleantech-3.jpg','A discussion at the Women in Cleantech expert meeting at STARTGATE UM6P'],['cleantech-4.jpg','Participants gathered at the Women in Cleantech event']]},
+  {id:'milestone',category:'milestones',tag:'MILESTONE · ENSIAS, RABAT',title:'A milestone worth celebrating.',description:'The ENSIAS excellence award for the top graduate of the 2020 Data Science and Big Data master’s class. Celebrated in 2023.',credit:'Photos from my LinkedIn award-ceremony post.',url:'https://www.linkedin.com/posts/hafsaa-ouifak_award-ceremony-ensias-activity-7034468508444827648-q3Zz',photos:[['award-2.jpg','Hafsaa at the ENSIAS excellence award ceremony'],['award.jpg','ENSIAS graduates and faculty celebrating at the award ceremony']]},
+  {id:'culture',category:'ideas',tag:'CURIOSITY · COME TO MY HOME',title:'Art, astronomy, and shared curiosity.',description:'A meeting of science, culture, and ideas at the 24th Come to My Home event at UM6P.',credit:'Photos from my LinkedIn post about the event.',url:'https://www.linkedin.com/posts/hafsaa-ouifak_cometomyhome-um6p-art-activity-6981269418089586688-SkWP',photos:[['culture-3.jpg','Participants seated in a circle during a Come to My Home cultural event at UM6P'],['culture-4.jpg','A shared discussion at the Come to My Home event'],['culture-2.jpg','A science presentation at the Come to My Home event']]},
+  {id:'outreach',category:'community',tag:'OUTREACH · UTRGV',title:'A little racing. A lot of data science.',description:'Brainstorming an interactive race dashboard with Kristen Hallas for Florence Nightingale Day at UTRGV.',credit:'Video preview and activity account shared by Kristen Hallas on LinkedIn.',url:'https://www.linkedin.com/posts/kristenhallas_presidentialaichallenge-ai-womeninstem-activity-7450946838397890560-NqOu',photos:[['outreach.jpg','Video preview showing toy cars on a track during the UTRGV data-science outreach activity']]},
+  {id:'fuzzy-post',category:'ideas',tag:'RESEARCH, EXPLAINED SIMPLY',title:'Everyday questions. Fuzzy answers.',description:'Why the words we use for heat and pain can help us talk about interpretable artificial intelligence.',credit:'Illustration from my LinkedIn fuzzy-logic post.',url:'https://www.linkedin.com/posts/hafsaa-ouifak_xai-fuzzylogic-neurofuzzy-activity-7341503973217992704-J0lH',photos:[['xai.jpg','Illustration comparing subjective descriptions of temperature and pain']]}
+];
+
 function projectIllustration(type) {
   const grid = '<defs><pattern id="grid-'+type+'" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#809776" stroke-opacity=".1" stroke-width=".6"/></pattern><linearGradient id="fade-'+type+'" x2="1" y2="1"><stop stop-color="#2c402b"/><stop offset="1" stop-color="#152218"/></linearGradient></defs><rect width="580" height="255" fill="url(#fade-'+type+')"/><rect width="580" height="255" fill="url(#grid-'+type+')"/>';
   let art='';
@@ -58,9 +85,9 @@ function projectIllustration(type) {
     for(let i=0;i<3;i++)for(let j=0;j<5;j++)art+=`<path d="M100 ${84+i*48}C180 ${84+i*48} 175 ${54+j*37} 253 ${54+j*37}"/>`;
     for(let j=0;j<5;j++)for(let k=0;k<2;k++)art+=`<path d="M273 ${54+j*37}C365 ${54+j*37} 360 ${105+k*55} 440 ${105+k*55}"/>`;
     art+='</g><g fill="#21371f" stroke="#c3e7bc" stroke-width="1.3">';
-    for(let i=0;i<3;i++)art+=`<circle cx="100" cy="${84+i*48}" r="9"/>`;
-    for(let j=0;j<5;j++)art+=`<rect x="253" y="${44+j*37}" width="20" height="20" rx="4"/>`;
-    for(let k=0;k<2;k++)art+=`<circle cx="440" cy="${105+k*55}" r="10"/>`;
+    for(let i=0;i<3;i++)art+=`<circle cx="100" cy="${84+i*48}" r="9" stroke="#64dff0"/>`;
+    for(let j=0;j<5;j++)art+=`<rect x="253" y="${44+j*37}" width="20" height="20" rx="4" stroke="#ad9cff"/>`;
+    for(let k=0;k<2;k++)art+=`<circle cx="440" cy="${105+k*55}" r="10" stroke="#ffad96"/>`;
     art+='</g><circle cx="100" cy="132" r="4" fill="#c3e7bc"/><circle cx="440" cy="105" r="4" fill="#c3e7bc"/><g fill="#98ae8b" font-family="monospace" font-size="9"><text x="74" y="221">INPUTS</text><text x="236" y="20" opacity="0">RULES</text><text x="242" y="245">IF → THEN</text><text x="414" y="205">OUTPUTS</text></g><path d="M253 128h20M263 118v20" stroke="#c3e7bc"/>';
   } else if(type==='vessel') {
     art='<g fill="none" stroke="#a9ceaf" stroke-opacity=".15"><ellipse cx="290" cy="178" rx="215" ry="37"/><ellipse cx="290" cy="178" rx="175" ry="27"/><ellipse cx="290" cy="178" rx="135" ry="17"/></g><g fill="#213a30" stroke="#accdb5" stroke-width="1.2"><path d="M150 145l98-46 188 45-91 57z"/><path d="M150 145l13 23 177 47 5-14z" fill="#172b24"/><path d="M345 201l91-57-12 27-84 44z" fill="#28483a"/><path d="M222 125l51-24 87 23-51 27z" fill="#375343"/><path d="M250 99v-32l50 13v33z"/><path d="M250 67l23-12 50 13-23 12z"/><path d="M300 80l23-12v32l-23 13z" fill="#294337"/></g><path d="M286 60V34M276 39h20" stroke="#c3e7bc" stroke-width="1.5"/><g fill="none" stroke="#c3e7bc" stroke-opacity=".6" stroke-dasharray="3 5"><path d="M323 90l59-39h88"/><path d="M266 142l-65 47h-81"/></g><g font-family="monospace" font-size="9" fill="#b3c9a7"><text x="388" y="44">DIGITAL TWIN</text><text x="92" y="207">BATTERY STATE</text></g><circle cx="323" cy="90" r="3" fill="#c3e7bc"/><circle cx="266" cy="142" r="3" fill="#c3e7bc"/>';
@@ -74,5 +101,9 @@ function projectIllustration(type) {
     values.forEach((v,i)=>{let x=60+i*27,y=245-v;art+=`<path d="M${x} ${y-17}v45"/><rect x="${x-4}" y="${y}" width="8" height="19" fill="${i%3?'#6b8f64':'#b3cda1'}" stroke="none"/>`;});
     art+='</g><path d="M50 190C95 199 120 151 165 160S230 172 270 132S330 145 373 104S438 107 510 65" stroke="#c3e7bc" stroke-width="2" fill="none"/><path d="M373 104Q440 100 515 48M373 104Q440 130 515 105" stroke="#c3e7bc" stroke-opacity=".3" stroke-dasharray="3 5" fill="none"/><g font-family="monospace" font-size="9" fill="#9ab28b"><text x="50" y="233">OBSERVATIONS</text><text x="423" y="233">POSSIBLE FUTURES</text></g>';
   }
-  return `<svg viewBox="0 0 580 255" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${grid}${art}</svg>`;
+  let svg = `<svg viewBox="0 0 580 255" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${grid}${art}</svg>`;
+  const accent={rules:'#64dff0',vessel:'#64dff0',landscape:'#ffac8d',forecast:'#ad9cff'}[type];
+  const palette={'#c3e7bc':accent,'#2c402b':'#172b50','#152218':'#0b1832','#809776':'#739cdb','#21371f':'#152843','#98ae8b':'#a6bddf','#213a30':'#183963','#accdb5':'#8bafff','#172b24':'#11294b','#28483a':'#28588b','#375343':'#7665b8','#294337':'#254677','#b3c9a7':'#bed4ed','#9ab98a':'#67dacd','#1b2f1c':'#27304e','#d3dfca':'#d5e9ff','#6b8f64':'#4d9de0','#b3cda1':'#ffad96','#9ab28b':'#adc0df'};
+  for(const [before,after] of Object.entries(palette))svg=svg.replaceAll(before,after);
+  return svg;
 }
