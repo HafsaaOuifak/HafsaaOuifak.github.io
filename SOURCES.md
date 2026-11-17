@@ -54,3 +54,15 @@ Search implementation follows Google Search Central guidance on JavaScript SEO, 
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 
 The initial HTML and interactive page share the same renderers and visible research content. Structured data identifies the profile and describes the visible publication archive. No rankings, indexing, citations, or research results are fabricated.
+
+## November 17, 2026 publication refresh
+
+The journal-first library and featured-paper carousel include all six journal articles. Bibliographic details were cross-checked with the supplied `own-bib.bib`, the public ResearchGate profile, and publisher records. Scholar's public profile returned HTTP 403 during this update, so no live Scholar metrics or automatic synchronization are claimed. The RSER paper retains its January 2026 issue year (online publication was in 2025). Existing conference and under-review statuses are preserved.
+
+- Researcher profile: https://www.researchgate.net/profile/Hafsaa-Ouifak-2
+- Battery digital twins: https://www.sciencedirect.com/science/article/pii/S1364032125010202
+- SimBAC-NFS: https://onlinelibrary.wiley.com/doi/10.1155/acis/3194148
+- Fuzzy-logic review: https://www.sciencedirect.com/science/article/pii/S0925231225012743
+- Medical ensembles: https://www.worldscientific.com/doi/10.1142/S0218488524500119
+- Ensemble review: https://www.sciencedirect.com/science/article/pii/S0952197623007662
+- Medical diagnosis: https://www.sciencedirect.com/science/article/pii/S2468227623000674

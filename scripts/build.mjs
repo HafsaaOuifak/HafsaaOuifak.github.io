@@ -9,11 +9,11 @@ const base='https://hafsaaouifak.github.io/';
 const context=vm.createContext({});
 vm.runInContext(await readFile(path.join(root,'content.js'),'utf8')+'\n'+await readFile(path.join(root,'render.js'),'utf8')+`\nglobalThis.rendered={
  projects:portfolio.projects.map(renderProjectCard).join(''),
- papers:[...portfolio.publications].sort((a,b)=>b.year-a.year).slice(0,6).map(renderPaperCard).join(''),
+ papers:portfolio.publications.filter(paper=>paper.type==='published').sort((a,b)=>b.year-a.year).map(renderPaperCard).join(''),
  moments:portfolio.moments.map(renderMomentCard).join(''),
  timeline:portfolio.journey.research.map(renderTimelineItem).join(''),
- spotlight:renderSpotlightContent(portfolio.publications[2]),
- spotlightArt:projectIllustration('rules').replaceAll('grid-rules','spotlight-grid-rules').replaceAll('fade-rules','spotlight-fade-rules'),
+ spotlight:renderSpotlightContent(portfolio.publications[0]),
+ spotlightArt:projectIllustration('vessel').replaceAll('grid-vessel','spotlight-grid-vessel').replaceAll('fade-vessel','spotlight-fade-vessel'),
  data:portfolio,topicNames,escapeHTML
 };`,context);
 const {rendered}=context;
@@ -34,7 +34,7 @@ let html=await readFile(path.join(root,'index.html'),'utf8');
 function fill(id,content){const pattern=new RegExp('(<div\\b[^>]*\\bid="'+id+'"[^>]*>)(</div>)');if(!pattern.test(html))throw new Error('Missing prerender target '+id);html=html.replace(pattern,(_,open,close)=>open+content+close);}
 for(const [id,content] of Object.entries({'projects-grid':rendered.projects,'publications-list':rendered.papers,'moments-grid':rendered.moments,'timeline':rendered.timeline,'spotlight-copy':rendered.spotlight,'spotlight-art':rendered.spotlightArt}))fill(id,content);
 html=html.replace('<!-- structured-data -->',jsonLd([website,person,{'@type':'ProfilePage','@id':base+'#profile',url:base,name:'Hafsaa Ouifak | Explainable & Physical AI Researcher',description:'The personal research portfolio of Hafsaa Ouifak.',inLanguage:'en',isPartOf:{'@id':website['@id']},mainEntity:{'@id':person['@id']}}]));
-html=html.replace('<p id="publication-count" class="result-count" aria-live="polite"></p>','<p id="publication-count" class="result-count" aria-live="polite">Showing 6 of 14 papers</p>');
+html=html.replace('<p id="publication-count" class="result-count" aria-live="polite"></p>','<p id="publication-count" class="result-count" aria-live="polite">Showing 6 of 6 journal papers</p>');
 // Each static preview is exactly the content visitors see before interacting.
 for(const topic of ['explainable','energy','autonomy']){const count=data.publications.filter(p=>p.topics.includes(topic)).length;const pattern=new RegExp('(data-pub-topic="'+topic+'"[^>]*>[\\s\\S]*?<b>)(</b>)');html=html.replace(pattern,(_,a,b)=>a+count+b);}
 await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});

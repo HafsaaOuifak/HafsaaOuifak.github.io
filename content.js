@@ -1,4 +1,4 @@
-/* Editable portfolio content. Claims and publication statuses follow the October 2026 CV.
+/* Editable portfolio content. Publication metadata checked against public researcher and publisher records in November 2026; pending statuses follow the supplied CV.
    Public source links and asset credits are documented in SOURCES.md. */
 const portfolio = {
   projects: [
@@ -20,12 +20,12 @@ const portfolio = {
       links:[['Forecasting code','https://github.com/HafsaaOuifak/Stock-market-forecasting'],['Economic graph analysis','https://github.com/HafsaaOuifak/Moroccan-IO-table-analysis-Graphs-']]}
   ],
   publications: [
-    {year:2026,title:'Digital twin for battery energy storage systems',venue:'Renewable and Sustainable Energy Reviews · with A. Bendaouia, F. Wang & J. Li',type:'published',url:'https://doi.org/10.1016/j.rser.2025.116347'},
+    {year:2026,title:'Digital twin for battery energy storage systems',venue:'Renewable and Sustainable Energy Reviews · 226, 116347 · with A. Bendaouia, F. Wang & J. Li',type:'published',url:'https://doi.org/10.1016/j.rser.2025.116347'},
     {year:2026,title:'SimBAC-NFS: Similarity-Based Aggregation and Calibration of Neuro-Fuzzy Systems',venue:'Applied Computational Intelligence and Soft Computing · with A. Idri',type:'published',url:'https://doi.org/10.1155/acis/3194148'},
-    {year:2025,title:'A Comprehensive Review of Fuzzy Logic based Interpretability and Explainability of Machine Learning Techniques Across Domains',venue:'Neurocomputing · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.neucom.2025.130602'},
-    {year:2024,title:'Homogenous Ensembles of Neuro-Fuzzy Classifiers using Hyperparameter Tuning for Medical Data',venue:'International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems',type:'published',url:'https://doi.org/10.1142/S0218488524500119'},
-    {year:2023,title:'Application of neuro-fuzzy ensembles across domains: A systematic review of the two last decades (2000–2022)',venue:'Engineering Applications of Artificial Intelligence · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.engappai.2023.106582'},
-    {year:2023,title:'On the performance and interpretability of Mamdani and Takagi-Sugeno-Kang based neuro-fuzzy systems for medical diagnosis',venue:'Scientific African · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.sciaf.2023.e01610'},
+    {year:2025,title:'A Comprehensive Review of Fuzzy Logic based Interpretability and Explainability of Machine Learning Techniques Across Domains',venue:'Neurocomputing · 647, 130602 · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.neucom.2025.130602'},
+    {year:2024,title:'Homogenous Ensembles of Neuro-Fuzzy Classifiers using Hyperparameter Tuning for Medical Data',venue:'International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems · 32(3), 273–301 · with Z. Afkhkhar, A. T. I. Manzi & A. Idri',type:'published',url:'https://doi.org/10.1142/S0218488524500119'},
+    {year:2023,title:'Application of neuro-fuzzy ensembles across domains: A systematic review of the two last decades (2000–2022)',venue:'Engineering Applications of Artificial Intelligence · 124, 106582 · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.engappai.2023.106582'},
+    {year:2023,title:'On the performance and interpretability of Mamdani and Takagi-Sugeno-Kang based neuro-fuzzy systems for medical diagnosis',venue:'Scientific African · 20, e01610 · with A. Idri',type:'published',url:'https://doi.org/10.1016/j.sciaf.2023.e01610'},
     {year:2026,title:'Interpretable Bagging of Adaptive Neuro-Fuzzy Inference Systems: A Rule-Merging Approach',venue:'Submitted to Machine Learning · with A. Idri',type:'review'},
     {year:2026,title:'Path Planning Algorithms for Autonomous Mobile Robots',venue:'Submitted to Engineering Applications of Artificial Intelligence',type:'review'},
     {year:2026,title:'Toward AI-Enabled Battery Management and Mission Decision Support for Autonomous Maritime Defense Systems',venue:'Resilience Week 2026 · presented; publication pending',type:'conference'},
