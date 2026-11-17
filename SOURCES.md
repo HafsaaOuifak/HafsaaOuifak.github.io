@@ -66,3 +66,7 @@ The journal-first library and featured-paper carousel include all six journal ar
 - Medical ensembles: https://www.worldscientific.com/doi/10.1142/S0218488524500119
 - Ensemble review: https://www.sciencedirect.com/science/article/pii/S0952197623007662
 - Medical diagnosis: https://www.sciencedirect.com/science/article/pii/S2468227623000674
+
+## November 17, 2026 citation metrics
+
+Citation counts, h-index (5), i10-index (4), and total citations (155) were read from Hafsaa's public Google Scholar profile on November 17, 2026: https://scholar.google.com/citations?user=mIfDvBIAAAAJ. They are a dated snapshot, not a live feed, and are labelled "Google Scholar · Nov 2026" on the page. Papers with no Scholar citations yet show no count. Update the `citations` fields in `content.js` and the metrics block in `index.html` to refresh them.
